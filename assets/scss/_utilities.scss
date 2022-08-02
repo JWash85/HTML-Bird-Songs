@@ -1,0 +1,43 @@
+$myalign: center;
+$myGrad: linear-gradient(to bottom right, beige, skyblue);
+$myMargin: auto;
+$mydisplay: block;
+
+@function text-color-picker($color) {
+    @if(lightness($color) > 70) {
+      @return black;
+    } @else {
+      @return white;
+    }
+  }
+@mixin big-text($size) {
+    &:hover {
+        color: red;
+        font-size: $size;
+        }
+    }
+
+@mixin set-bg($color) {
+    background: $color;
+    color: text-color-picker($color)
+  }
+
+@mixin cntr($position) {
+    display: $mydisplay;
+    margin-left: $myMargin;
+    margin-right: $myMargin;
+    width: $position;
+    padding: 2em;
+  }
+
+  @mixin aud($position) {
+    display: $mydisplay;
+    margin-left: $myMargin;
+    margin-right: $myMargin;
+    width: $position;
+  }
+
+
+
+
+

@@ -7,25 +7,31 @@ body {
 
 nav {
   margin: 10px;
+  background: -webkit-gradient(linear, left top, right bottom, from(beige), to(skyblue));
   background: linear-gradient(to bottom right, beige, skyblue);
   text-align: center;
 }
+
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 10px;
 }
+
 nav ul li {
   display: inline;
   margin-right: 15px;
 }
+
 nav ul li a {
   font-size: 30px;
   text-decoration: none;
 }
+
 nav ul li a:visited {
   color: blue;
 }
+
 nav ul li a:hover {
   color: hotpink;
 }
@@ -58,5 +64,4 @@ summary:hover {
   color: red;
   font-size: 25px;
 }
-
 /*# sourceMappingURL=style.css.map */

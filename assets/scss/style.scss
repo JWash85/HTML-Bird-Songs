@@ -1,0 +1,55 @@
+@import "_utilities";
+
+body {
+    margin: $myMargin;
+    width: 80%;
+    max-height: 100%;
+    padding: 10px;
+}
+
+nav {
+    margin: 10px;
+    background: $myGrad;
+    text-align: $myalign;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+    li {
+        display: inline;
+        margin-right: 15px;
+        
+    a {
+        font-size: 30px;
+        text-decoration: none;
+        &:visited {
+            color: blue;
+        }
+        &:hover {
+            color: hotpink;
+}
+}
+}
+}
+}
+img{
+    @include cntr(50%)
+}
+
+audio, h4{
+    @include aud(50%)
+}
+
+.current-page {
+    border-style: solid;
+    padding: 3px;
+}
+
+main {
+    margin: 0 10%;
+    
+}
+
+summary{
+    @include big-text(25px)
+}
